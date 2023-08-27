@@ -1291,9 +1291,15 @@ textarea.input-field {
   margin-block-end: 5px;
 }
 
-.event-card .card-banner .img-cover { transition: var(--transition-2); }
+.event-card .card-banner .img-cover { 
+  transition: var(--transition-2); 
+  opacity: 0.5;
+}
 
-.event-card:is(:hover, :focus-within) .img-cover { transform: scale(1.05); }
+.event-card:is(:hover, :focus-within) .img-cover { 
+  transform: scale(1.05); 
+  opacity: 1;
+ }
 
 .event .btn {
   margin-inline: auto;
