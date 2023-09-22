@@ -1123,6 +1123,50 @@ body.nav-active { overflow: hidden; }
   right: 0;
 }
 
+/*-----------------------------------*\
+ #CLIENT
+\*-----------------------------------*/
+/* Styling for the .clients section */
+.clients {
+  background-color: var(--black-alpha-15);
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to the section for spacing */
+}
+
+/* Center-align the heading within .clients */
+.clients h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* Flexbox layout for columns within .clients */
+.clients .flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center-align columns horizontally */
+}
+
+/* Styling for individual columns */
+.clients .col {
+  flex-basis: calc(33.33% - 20px); /* Adjust column width for three columns per row with spacing */
+  max-height: 180px;
+  text-align: center; /* Center-align content within columns */
+  padding: 20px; /* Add padding to each column for spacing */
+  box-sizing: border-box; /* Include padding in column dimensions */
+}
+
+/* Hover effect for client logos */
+.clients .col img:hover {
+  transform: scale(1.2);
+}
+
+/* Styling for images within columns */
+.clients img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Apply the transition effect */
+}
+
 
 
 
